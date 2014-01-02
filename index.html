@@ -6,12 +6,17 @@
 <body>
     <canvas width="500" height="500"></canvas>
 
+		<script src="util.js"></script>
     <script src="moving_object.js"></script>
+		<script src="asteroid.js"></script>
     <script>
         var canvas = document.getElementsByTagName("canvas")[0];
         // new Circles.Game(500, 500, 10).start(canvas);
 				m = new Asteroids.MovingObject([100, 100], [2, 4], 10, "black")
-				m.start(canvas)
+				a = Asteroids.Asteroid.randomAsteroid(500, 500)
+				console.log("position is " + a.pos)
+				a.start(canvas)
+				// m.start(canvas)
     </script>
 </body>
 </html>
