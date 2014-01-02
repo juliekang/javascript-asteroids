@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asteroids</title>
+</head>
+<body>
+    <canvas width="500" height="500"></canvas>
+
+    <script src="moving_object.js"></script>
+    <script>
+        var canvas = document.getElementsByTagName("canvas")[0];
+        // new Circles.Game(500, 500, 10).start(canvas);
+				m = new Asteroids.MovingObject([100, 100], [2, 4], 10, "black")
+				m.start(canvas)
+    </script>
+</body>
+</html>
