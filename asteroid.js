@@ -8,10 +8,10 @@
 	Asteroid.inherits(Asteroids.MovingObject);
 
 	Asteroid.COLOR = 'black';
-	Asteroid.RADIUS = 10;
+	Asteroid.RADIUS = 30;
 
 	Asteroid.randomAsteroid = function(dimX, dimY) {
-		var startingPos = [Math.floor(dimX * Math.random()), Math.floor(dimY * Math.random())];
+		var startingPos = [dimX * Math.random(), dimY * Math.random()];
 		// console.log("starting pos is " + startingPos)
 		var velocity = [10 * Math.random(), 10 * Math.random()];
 

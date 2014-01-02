@@ -9,13 +9,15 @@
 		<script src="util.js"></script>
     <script src="moving_object.js"></script>
 		<script src="asteroid.js"></script>
+		<script src="game.js"></script>
+
     <script>
         var canvas = document.getElementsByTagName("canvas")[0];
-        // new Circles.Game(500, 500, 10).start(canvas);
-				m = new Asteroids.MovingObject([100, 100], [2, 4], 10, "black")
-				a = Asteroids.Asteroid.randomAsteroid(500, 500)
-				console.log("position is " + a.pos)
-				a.start(canvas)
+				// m = new Asteroids.MovingObject([100, 100], [2, 4], 10, "black")
+				// a = Asteroids.Asteroid.randomAsteroid(500, 500)
+			  var ctx = canvas.getContext("2d");
+				g = new Asteroids.Game(ctx);
+				g.start();
 				// m.start(canvas)
     </script>
 </body>

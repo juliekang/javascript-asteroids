@@ -11,6 +11,7 @@
 	MovingObject.prototype.move = function() {
 		this.pos[0] += this.vel[0];
 		this.pos[1] += this.vel[1];
+		console.log("new position is " + this.pos)
 	};
 
 	MovingObject.prototype.draw = function(ctx) {
@@ -29,10 +30,10 @@
 		ctx.fill();
 	};
 
-	MovingObject.prototype.start = function(canvasEl) {
-	  var ctx = canvasEl.getContext("2d");
-		this.draw(ctx)
-	}
+	// MovingObject.prototype.start = function(canvasEl) {
+	//   var ctx = canvasEl.getContext("2d");
+	// 	this.draw(ctx)
+	// }
 
 	MovingObject.prototype.isCollidedWith = function(otherObject) {
 		radiusSum = this.radius + otherObject.radius
