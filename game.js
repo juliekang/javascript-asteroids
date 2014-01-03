@@ -7,7 +7,7 @@
 		Asteroids.HEIGHT = Asteroids.CTX.canvas.height;
 		this.asteroids = (function() {
 			var asteroidsArr = [];
-			for(var i = 0; i < 1; i++) {
+			for(var i = 0; i < 4; i++) {
 				asteroidsArr.push(Asteroids.Asteroid.randomAsteroid(Asteroids.WIDTH, Asteroids.HEIGHT));
 			}
 			return asteroidsArr;
@@ -23,9 +23,6 @@
 		console.log("bullet velocity is " + this.bullets[0].vel);
 
 	}
-
-	// var Game.DIM_X = this.ctx.width;
-	// var Game.DIM_Y = this.ctx.height;
 
 	Game.prototype.draw = function () {
 		Asteroids.CTX.clearRect(0, 0, Asteroids.WIDTH, Asteroids.HEIGHT);
