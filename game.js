@@ -17,11 +17,11 @@
 	};
 
 	Game.prototype.fireBullet = function() {
-		this.bullets.push(this.ship.fireBullet());
-		console.log("bullet color is " + this.bullets[0].color)
-		console.log("bullet position is " + this.bullets[0].pos);
-		console.log("bullet velocity is " + this.bullets[0].vel);
+		bullet = this.ship.fireBullet();
 
+		if (bullet != null) {
+		  this.bullets.push(bullet);
+		}
 	}
 
 	Game.prototype.draw = function () {
