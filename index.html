@@ -4,18 +4,23 @@
     <title>Asteroids</title>
 </head>
 <body>
-    <canvas width="500" height="500"></canvas>
+    <canvas width="500" height="500" style="border-width: 1px"></canvas>
 
 		<script src="util.js"></script>
+		<script src="keymaster.js"></script>
     <script src="moving_object.js"></script>
 		<script src="asteroid.js"></script>
 		<script src="game.js"></script>
+		<script src="ship.js"></script>
+		<script src="bullet.js"></script>
 
     <script>
         var canvas = document.getElementsByTagName("canvas")[0];
+				canvas.style.border = "1px solid red"
 				// m = new Asteroids.MovingObject([100, 100], [2, 4], 10, "black")
 				// a = Asteroids.Asteroid.randomAsteroid(500, 500)
 			  var ctx = canvas.getContext("2d");
+
 				g = new Asteroids.Game(ctx);
 				g.start();
 				// m.start(canvas)
