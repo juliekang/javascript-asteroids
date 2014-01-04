@@ -8,7 +8,7 @@
 	Ship.inherits(Asteroids.MovingObject);
 
 	Ship.RADIUS = 10;
-	Ship.COLOR = 'blue';
+	Ship.COLOR = 'yellow';
 
 	Ship.prototype.power = function(impulse) {
 		this.vel[0] += impulse[0] * 0.3;
@@ -16,12 +16,11 @@
 	}
 
 	Ship.prototype.fireBullet = function() {
-		var speed = 5 * Math.pow(Math.pow(this.vel[0], 2) + Math.pow(this.vel[1], 2), 0.5);
-		//console.log("bullet speed = " + speed);
+		var speed = Math.pow(Math.pow(this.vel[0], 2) + Math.pow(this.vel[1], 2), 0.5);
 		if (speed === 0) {
 			return null;
 		} else {
-			return new Asteroids.Bullet(this.pos.slice(), [this.vel[0] * speed, this.vel[1] * speed]);
+			return new Asteroids.Bullet(this.pos.slice(), [this.vel[0]/speed * 5, this.vel[1]/speed * 5]);
 		}
 	}
 

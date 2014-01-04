@@ -44,9 +44,3 @@
 	}
 
 })(this)
-
-
-// m1 = new MovingObject([0, 0], [2, 4], 10, "black")
-// m2 = new MovingObject([100, 2], [2, 4], 10, "black")
-//
-// console.log(m1.isCollidedWith(m2))
