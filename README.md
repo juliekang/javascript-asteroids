@@ -5,6 +5,8 @@ With Sol Garger (@biggiesols) for App Academy (@appacademy).
 
 The classic arcade game using JavaScript and canvas.
 
+### Screenshot:
+
 ![Imgur](http://i.imgur.com/sQvPo8R.png)
 
 ### To run locally:
