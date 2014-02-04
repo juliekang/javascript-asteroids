@@ -82,7 +82,7 @@
 		var that = this;
 		this.asteroids.forEach(function(asteroid) {
 			if(that.ship.isCollidedWith(asteroid)) {
-				alert("you lose, sucka!");
+				alert("Sorry, you lose!");
 				that.stop();
 			}
 		})
@@ -113,7 +113,7 @@
 	Game.prototype.checkWinner = function() {
 		if(this.asteroids.length === 0) {
 			this.stop();
-			alert("huzzah!");
+			alert("Huzzah!  You win!");
 		}
 	};
 

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Asteroids</title>
+    <title>NyanCat Asteroids</title>
 </head>
 <body>
+    <h1>NyanCat Asteroids</h1>
+    <p>Up/down/left/right arrow keys to propel your ship.</p>
+    <p>Spacebar to shoot!</p>
+    <p><button id="restart">Start New Game</button></p>
+
     <canvas width="500" height="500" style="border-width: 1px"></canvas>
 
 		<script src="util.js"></script>
@@ -15,15 +20,15 @@
 		<script src="bullet.js"></script>
 
     <script>
-        var canvas = document.getElementsByTagName("canvas")[0];
-				canvas.style.border = "1px solid red"
-				// m = new Asteroids.MovingObject([100, 100], [2, 4], 10, "black")
-				// a = Asteroids.Asteroid.randomAsteroid(500, 500)
-			  var ctx = canvas.getContext("2d");
+        document.getElementById("restart").onclick = function () {
+            document.getElementById("restart").blur();
+            var canvas = document.getElementsByTagName("canvas")[0];
+            canvas.style.border = "1px solid red"
+            var ctx = canvas.getContext("2d");
 
-				g = new Asteroids.Game(ctx);
-				g.start();
-				// m.start(canvas)
+            g = new Asteroids.Game(ctx);
+            g.start();
+        };
     </script>
 </body>
 </html>
