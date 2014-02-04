@@ -9,6 +9,10 @@ The classic arcade game using JavaScript and canvas.
 
 ![Imgur](http://i.imgur.com/sQvPo8R.png)
 
+### To play online:
+
+[http://www.juliekang.net/asteroids/index.html](http://www.juliekang.net/asteroids/index.html)
+
 ### To run locally:
 
 Fire up your favorite web browser and go to File/Open.  Locate the javascript-asteroids directory and select the 'index.html' file, and you should be good to go!
